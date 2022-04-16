@@ -6,8 +6,8 @@ metadata:
   labels:
     app: gitops-example
   annotations:
-# Container Image Automated Updates
-fluxcd.io/automated: "true"
+    # Container Image Automated Updates
+    fluxcd.io/automated: "true"
 spec:
   selector:
     matchLabels:
@@ -20,7 +20,8 @@ spec:
     spec:
       containers:
       - name: gitops-example
-        image: 939921924936.dkr.ecr.us-east-1.amazonaws.com/gitops-app-demo:f3560ab
+        image: <your image URL>
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
+
