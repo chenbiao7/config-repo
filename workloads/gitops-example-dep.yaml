@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -20,7 +21,7 @@ spec:
     spec:
       containers:
       - name: gitops-example
-        image: 939921924936.dkr.ecr.us-east-1.amazonaws.com/gitops-app-demo:f3560ab
+        image: 939921924936.dkr.ecr.us-east-1.amazonaws.com/gitops-app-demo:83a437c
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
